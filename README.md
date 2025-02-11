@@ -2,7 +2,7 @@
 
 Este projeto é uma aplicação Java que permite consultar informações de um endereço a partir de um **CEP** fornecido pelo usuário. Utilizando a API gratuita [ViaCEP](https://viacep.com.br/), o programa faz uma requisição HTTP e retorna detalhes como **logradouro, bairro, cidade e estado**.
 
-O objetivo do projeto é demonstrar o uso da API `java.net.http` para consumir serviços web de forma simples e eficiente, além de mostrar boas práticas na manipulação de requisições HTTP em Java.
+O objetivo do projeto é demonstrar o uso da API `ViaCEP` para consumir serviços web de forma simples e eficiente, além de mostrar boas práticas na manipulação de requisições HTTP em Java.
 
 ## 🚀 Tecnologias utilizadas
 - **Java 11+**
