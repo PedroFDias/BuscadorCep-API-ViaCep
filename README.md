@@ -5,7 +5,7 @@ Este projeto é uma aplicação Java que permite consultar informações de um e
 O objetivo do projeto é demonstrar o uso da API `java.net.http` para consumir serviços web de forma simples e eficiente, além de mostrar boas práticas na manipulação de requisições HTTP em Java.
 
 ## 🚀 Tecnologias utilizadas
-- **Java 11+** (utilizando a API `java.net.http`)
+- **Java 11+**
 
 ## 📌 Funcionalidades
 ✅ Consulta de endereço a partir de um **CEP válido**  
@@ -23,16 +23,24 @@ O objetivo do projeto é demonstrar o uso da API `java.net.http` para consumir s
 4. **Compile e execute o programa**  
 
 ## 📖 Exemplo de uso
+Escolha Operação:
+```
+Escolha uma das operações: 
+0- Sair
+1- Consultar CEP
+```
 Usuário insere um CEP:  
 ```
-Digite o CEP: 30130-010
+Informe o CEP: 01001000
 ```
 Saída esperada:  
 ```
-Logradouro: Praça Sete de Setembro
-Bairro: Centro
-Cidade: Belo Horizonte
-Estado: MG
+CEP: 01001-000
+Rua: Praça da Sé
+Comp: lado ímpar
+Bairro: Sé
+Localidade: São Paulo
+Estado: São Paulo
 ```
 
 ## 🛠 Tecnologias e principais classes utilizadas
