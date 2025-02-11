@@ -12,9 +12,8 @@ Retorno de informações como logradouro, bairro, cidade, estado e complemento
 Tratamento de erros para CEPs inválidos ou inexistentes
 
 ## 🔧 Como executar
-Clone este repositório:
-git clone:
-https://github.com/seu-usuario/seu-repositorio.git
+Git clone:
+[https://github.com/seu-usuario/seu-repositorio.git](https://github.com/PedroFDias/BuscadorCep-API-ViaCep.git)
 
 Abra o projeto em uma IDE de sua preferência (Eclipse, IntelliJ, NetBeans etc.)
 Certifique-se de que possui o Java instalado e configurado no ambiente
