@@ -1,31 +1,38 @@
 import com.google.gson.Gson;
-
-import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import com.google.gson.JsonObject;
 
-public class BuscadorCep {
+public class ConsultaCep {
 
-    public Endereco ConsultaCep(String cep){
-        String endereco = "viacep.com.br/ws/" + cep + "/json/";
-
-        HttpClient cliente = HttpClient.newHttpClient();
+    public Endereco BuscadorCep(String cep){
+        String endereco = "http://viacep.com.br/ws/" + cep + "/json/";
 
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(endereco))
                 .build();
 
-        HttpResponse<String> response = null;
         try {
-            response = HttpClient
+            HttpResponse<String> response = HttpClient
                     .newHttpClient()
                     .send(request, HttpResponse.BodyHandlers.ofString());
-        } catch (IOException | InterruptedException e) {
-            throw new RuntimeException("Não conseguir obter endereço!");
+
+            JsonObject repostaJson = new Gson().fromJson(response.body(), JsonObject.class);
+
+            // Verifica se há erro na resposta
+            if (repostaJson.has("erro") && repostaJson.get("erro").getAsBoolean()) {
+                System.out.println("CEP não encontrado!");
+                return null;
+            }
+
+            return new Gson().fromJson(repostaJson, Endereco.class);
+
+        } catch (Exception e) {
+            System.out.println("Não foi possível obter endereço!");
+            return null;
         }
 
-        return new Gson().fromJson(response.body(), Endereco.class);
     }
 }

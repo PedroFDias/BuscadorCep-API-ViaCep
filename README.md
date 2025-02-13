@@ -23,24 +23,30 @@ O objetivo do projeto é demonstrar o uso da API `ViaCEP` para consumir serviço
 4. **Compile e execute o programa**  
 
 ## 📖 Exemplo de uso
-Escolha Operação:
+Menu Operação:
 ```
-Escolha uma das operações: 
+********OPERAÇÕES********
 0- Sair
 1- Consultar CEP
+Escolha uma das operações: 
+*************************
 ```
 Usuário insere um CEP:  
 ```
-Informe o CEP: 01001000
+********OPERAÇÃO 1*******
+Informe o cep: 01001000
+*************************
 ```
 Saída esperada:  
 ```
+********RESULTADO********
 CEP: 01001-000
 Rua: Praça da Sé
 Comp: lado ímpar
 Bairro: Sé
 Localidade: São Paulo
 Estado: São Paulo
+*************************
 ```
 
 ## 🛠 Tecnologias e principais classes utilizadas
@@ -48,6 +54,7 @@ Estado: São Paulo
 - `HttpRequest` → Para criar a requisição GET  
 - `HttpResponse` → Para manipular a resposta da API  
 - `URI` → Para definir a URL da API ViaCEP  
+- `Gson` → Para criação de arquivo com dados da pesquisa
 
 ## 📜 Licença
 Este projeto é de código aberto e está licenciado sob a **MIT License**.
