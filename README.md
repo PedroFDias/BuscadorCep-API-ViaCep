@@ -4,8 +4,6 @@ Este projeto é uma aplicação Java que permite consultar informações de um e
 
 O objetivo do projeto é demonstrar o uso da API `ViaCEP` para consumir serviços web de forma simples e eficiente, além de mostrar boas práticas na manipulação de requisições HTTP em Java.
 
-## 🚀 Tecnologias utilizadas
-- **Java 11+**
 
 ## 📌 Funcionalidades
 ✅ Consulta de endereço a partir de um **CEP válido**  
@@ -16,7 +14,7 @@ O objetivo do projeto é demonstrar o uso da API `ViaCEP` para consumir serviço
 ## 🔧 Como executar
 1. **Clone este repositório:**  
    ```bash
-   git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/PedroFDias/BuscadorCep-API-ViaCep.git)
+   git clone https://github.com/PedroFDias/BuscadorCep-API-ViaCep.git
    ```  
 2. **Abra o projeto** em sua IDE favorita (**IntelliJ, Eclipse, VS Code etc.**)  
 3. **Verifique se tem Java 11 ou superior instalado**  
